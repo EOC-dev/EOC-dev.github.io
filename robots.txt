@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: EOC-dev.github.io/projects//sitemap.xml
+Sitemap: EOC-dev.github.io/sitemap.xml
