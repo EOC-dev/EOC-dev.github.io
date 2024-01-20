@@ -22,25 +22,6 @@
         - Institutional Honors: Magna Cum Laude
         - Activities: Member of IEEE Student Chapter and Robotics Team
 
-- title: Experience
-  type: time_table
-  contents:
-    - title: Clicklist (e-commerce) Associate
-      institution: Kroger, Rincon, GA
-      year: August 2018 - June 2019
-      description:
-        - Responsibilities included collecting digital orders, assisting with delivery to cars, and solving order-related problems.
-    - title: Packing Associate
-      institution: Amazon, CHA1 facility
-      year: June 2020 - February 2021
-      description:
-        - Responsibilities included packing packages and reporting item damages/defections.
-    - title: Associate
-      institution: Chic-Fil-A, Chattanooga
-      year: February 2021 - August 2021
-      description:
-        - Responsibilities included handling orders, dining room and bathroom maintenance.
-
 - title: Knowledge Areas & Skills
   type: nested_list
   contents:
