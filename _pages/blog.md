@@ -180,7 +180,6 @@ pagination:
 {% endif %}
   <!-- Existing post rendering code -->
   ...
-  <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
   {% if post.github_repo %}
     {% for repo in site.data.repositories.github_repos %}
       {% if repo.name == post.github_repo %}
