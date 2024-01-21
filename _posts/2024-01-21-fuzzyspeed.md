@@ -11,6 +11,14 @@ github_repo: EOC-dev/LabviewArduinoSoilMonitor
 
 This is an example post with image galleries.
 
+{% assign repo_name = page.github_repo %}
+{% if repo_name %}
+  {% assign repos = site.data.repositories.github_repos | where: "name", repo_name %}
+  {% for repo in repos %}
+    {% include repository/repo.liquid repository=repo %}
+  {% endfor %}
+{% endif %}
+
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid path="assets/img/9.jpg" class="img-fluid rounded z-depth-1" %}
