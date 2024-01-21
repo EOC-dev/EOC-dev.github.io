@@ -178,6 +178,15 @@ pagination:
 
 </div>
 {% endif %}
+  <!-- Existing post rendering code -->
+  ...
+  {% if post.github_repo %}
+    {% for repo in site.data.repositories.github_repos %}
+      {% if repo.name == post.github_repo %}
+        {% include repository/repo.liquid repository=repo %}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
     </li>
 
     {% endfor %}
