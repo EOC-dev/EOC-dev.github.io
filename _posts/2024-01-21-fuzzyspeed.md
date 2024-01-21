@@ -9,7 +9,19 @@ thumbnail: assets/img/Fuzzy-Logic speed controller/FuzzyMechanumStateFlow.png
 github_repo: EOC-dev/LabviewArduinoSoilMonitor
 ---
 
-This is an example post with image galleries.
+For my Fuzzy Logic undergrad class, we were required to do a project. This was a fairly open ended design project which included both a MATLAB simulation section as well as a hardware implentation section, and was a collaborative effort between me and my classmate **Cooper Burns** (insert LinkedIn link here). I mainly dealt with the hardware section, which I will describe in this article. 
+
+Below is the state flow diagram for the program:
+
+This translates to the following harware control diagram:
+
+
+## What could be improved? ##
+
+1. An astute observer will note a disturbing lack of hardware interrupts in the source code. This was mainly because I was still going through my Embedded Systems class and was not comfortable using hardware interrupts extensively yet. Micropython supports interrupts [natively](https://docs.micropython.org/en/latest/reference/isr_rules.html), and Circuitpython supports them [indirectly](https://learn.adafruit.com/cooperative-multitasking-in-circuitpython-with-asyncio) using the asyncio module. Both Micropython and Circuitpython are supported on the raspberry pi (see [here](https://www.raspberrypi.com/documentation/microcontrollers/micropython.html) and [here](https://learn.adafruit.com/circuitpython-on-raspberrypi-linux/overview)).
+2. 
+3. Since doing this project I have since learned about the [Embedded Fuzzy Logic Library](https://github.com/alvesoaj/eFLL), which allows emplementing fuzzy logic controllers on microcontrollers. I think it would be neat to design a fuzzy controller using the skfuzzy library, then implement it on hardware using the eFLL.
+
 
 {% assign repo_name = page.github_repo %}
 {% if repo_name %}
