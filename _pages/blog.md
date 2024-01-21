@@ -177,7 +177,7 @@ pagination:
   </div>
   -->
   <div class="col-sm-3">
-    <img class="card-img" src="{{post.thumbnail | relative_url}}" style="object-fit: cover; height: 130%; width: 130%; position: relative; transform: translateX(-10%);" alt="image">
+    <img class="card-img" src="{{post.thumbnail | relative_url}}" style="object-fit: cover; height: 150%; width: 150%; position: relative; transform: translateX(-10%);" alt="image">
   </div>
 
 
