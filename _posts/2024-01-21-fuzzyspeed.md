@@ -9,11 +9,21 @@ thumbnail: assets/img/Fuzzy-Logic speed controller/FuzzyMechanumStateFlow.png
 github_repo: EOC-dev/LabviewArduinoSoilMonitor
 ---
 
-For my Fuzzy Logic undergrad class, we were required to do a project. This was a fairly open ended design project which included both a MATLAB simulation section as well as a hardware implentation section, and was a collaborative effort between me and my classmate **Cooper Burns** (insert LinkedIn link here). I mainly dealt with the hardware section, which I will describe in this article. 
+For my Fuzzy Logic undergrad class we were required to do a project. This was a fairly open ended design project which included both a MATLAB simulation section as well as a hardware implentation section, and was a collaborative effort between me and my classmate **Cooper Burns** (insert LinkedIn link here). I mainly dealt with the hardware section, which I will describe in this article. 
 
 Below is the state flow diagram for the program:
 
-This translates to the following harware control diagram:
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/Fuzzy-Logic speed controller/FuzzyMechanumStateFlow.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+</div>
+
+This translates to the following hardware control diagram:
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/Fuzzy-Logic speed controller/ControlFlowDiagram.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+</div>
 
 
 ## What could be improved? ##
