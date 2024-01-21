@@ -20,18 +20,18 @@
     {
       "institution": "Chattanooga State Community College",
       "area": "General Engineering - Electrical Concentration",
-      "studyType": "A.A.S",
-      "startDate": "",
-      "endDate": "2021-05-01",
+      "studyType": "Associate of Applied Science (A.A.S)",
+      "startDate": "2019-08-01",
+      "endDate": "2021-05-15",
       "score": "3.75",
       "courses": []
     },
     {
       "institution": "University of Tennessee, Chattanooga Campus",
       "area": "Electrical Engineering",
-      "studyType": "Bachelor",
-      "startDate": "",
-      "endDate": "2023-08-01",
+      "studyType": "Bachelor of Science (B.Sc)",
+      "startDate": "2021-08-01",
+      "endDate": "2023-08-30",
       "score": "3.8",
       "courses": ["Robotics and Intelligent Systems Concentration"]
     }
@@ -39,17 +39,17 @@
   "skills": [
     {
       "name": "Programming",
-      "level": "Advanced",
+      "level": "Proficient",
       "keywords": ["Python", "C/C++", "VHDL"]
     },
     {
       "name": "Electrical Engineering",
-      "level": "Advanced",
+      "level": "Proficient",
       "keywords": ["Circuit Analysis", "Digital Logic", "Embedded Systems", "FPGA"]
     },
     {
       "name": "Control System Design",
-      "level": "Advanced",
+      "level": "Proficient",
       "keywords": ["PID Control", "Fuzzy Logic", "Data driven model discovery"]
     },
     {
