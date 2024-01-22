@@ -125,5 +125,7 @@ I also wrote some documentation on the full workflow I did to downsample the ima
 For this I will be using 'example.png' from the repositories /example folder.
 
 
-Firstly, install [Gimc]() according to your operating system, then go to Filters > G'MIC-Qt. Search for and select the “colormap” option. There are a few features this option has but the pertinent one is the "custom" setting. 
+Firstly, install [Gimc]() according to your operating system, then go to Filters > G'MIC-Qt. Search for and select the “colormap” option. There are a few features this option has but the pertinent one is the "custom" setting. Shown below is the result of downsampling the example image using this method, and the colormap as shown in gimp:
+
+
 
