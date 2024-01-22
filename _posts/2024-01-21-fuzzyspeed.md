@@ -105,7 +105,7 @@ leftSpeed = GPIO.PWM(ENB, 1000)
 rightSpeed.start(0)
 leftSpeed.start(0)
 ```
-Next, the code defines two functions. One that dedines the Ultrasonic Sensor function:
+Next, the code defines the function for the Ultrasonic Sensor function:
 
 ```python
 # Ultrasonic distance measurement function. I go into more detail on the concepts behind this code on the corresponding blog entry for this project:
@@ -139,13 +139,30 @@ def DistMeasure():
 
 Essentially whats happening here is an extrapolation of the classic physics formula:
 
+$$
 \text{speed} = \frac{\text{distance}}{\text{time}}
+$$
 
 Whereas in our case we use the ultrasonic sensor to send out a sound pulse when the TRIGGER pin is high, then record the time when it recieves it and the ECHO pin is high. Thus our equation becomes:
 
+$$
 \text{distance} = \frac{\text{ElapsedTime} \times 34300}{2}
+$$
+
+The code then defines the function for the Ultrasonic Sensor function:
+
+```python
+code code code
+```
 
 
+If the reader is unfamiliar with how fuzzy logic inferencing works, [here](https://www.youtube.com/watch?v=__0nZuG4sTw) is a great series of videos by the great Brian Douglas on the topic.
+
+The last part of the code defines the main control loop, which calls the MeasureDist function and pipes the distance recieved into our fuzzy logic control to obtain the corresponding PWM which will be used to drive our system.
+
+```python
+code code code
+```
 
 Finally, here is a video of the code working in action:
 
