@@ -122,7 +122,7 @@ I also wrote some documentation on the full workflow I did to downsample the ima
 
 # Using Gimp to downsample an image
 
-For this I will be using 'example.png' from the repositories /example folder.
+For this I will be using the following example image:
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
@@ -130,7 +130,7 @@ For this I will be using 'example.png' from the repositories /example folder.
     </div>
 </div>
 
-Firstly, install [Gimc]() according to your operating system, then go to Filters > G'MIC-Qt. Search for and select the “colormap” option. There are a few features this option has but the pertinent one is the "custom" setting. Shown below is the result of downsampling the example image to 16 colors using this method:
+Firstly, install the [Gimc](https://gmic.eu/download.html) gimp plugin according to your operating system (and also maybe download [gimp](https://www.gimp.org/downloads/) if thats not already installed), then go to Filters > G'MIC-Qt. Search for and select the “colormap” option. There are a few features this option has but the pertinent one is the "custom" setting. Shown below is the result of downsampling the example image to 16 colors using this method:
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
@@ -138,7 +138,7 @@ Firstly, install [Gimc]() according to your operating system, then go to Filters
     </div>
 </div>
 
-Now, put this image into a folder with the ColorExtractor script. After using the script as per the github [instructions](), there should be two files -- one for the list of colors in the image and the other defining the colormap of the image. As a sanity check, you can cross check the colormap file with the colormap palette in gimp to make sure the colors match.
+Now, put this image into a folder with the ColorExtractor script. After using the script as per the github [instructions](https://github.com/EOC-dev/ColorExtractorToList), there should be two files -- one for the list of colors in the image and the other defining the colormap of the image. As a sanity check, you can cross check the colormap file with the colormap palette in gimp to make sure the colors match.
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
