@@ -59,8 +59,7 @@ The code utilizes [state machines](https://www.ni.com/en/support/documentation/s
     </div>
 </div>
 
-This is the state the program will start in, and will use the arduino the sensor values to determine whether to loop in that case 
-or progress to the "Send Reminder" case.
+This is the state the program will start in, and will use the obtained sensor values to determine whether to loop within this case or progress to the "Send Reminder" case.
 
 * Send Reminder
 
@@ -70,7 +69,7 @@ or progress to the "Send Reminder" case.
     </div>
 </div>
 
-This state uses the "Send Email" expressVi to send an email to the user telling them their plant needs to be watered. Depending on whether the user pressed the "Send additional reminders" button, it will wither enter the "Reminder Timer" case, or the "Button fallback" case.
+This state uses the "Send Email" expressVi to send an email to the designated user telling them their plant needs to be watered. Depending on whether the user pressed the "Send additional reminders" button, it will either enter the "Reminder Timer" case, or the "Button fallback" case.
 
 * Reminder Timer
 * 
@@ -79,9 +78,7 @@ This state uses the "Send Email" expressVi to send an email to the user telling 
         {% include figure.liquid path="assets/img/ArduinoSoil/State3.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
-
-
-This state uses the "Elapsed time" expressVI, and subtracts from it the user defined Duration to determine the remaining time before moving forward. The Duration is entered in hours and Minutes, and needs to first be converted to seconds before being subtracted. The "remaining time" value is then used to determine to go to the "Send Reminder" case or stay in the present one. Theres also a failsafe to ensure that, if the moisture level falls below the threshold (i.e if the user waters the plant in this state), it will return to the "Read Value" case.
+This state uses the "Elapsed time" expressVI, and subtracts from it the user defined Duration to determine the remaining time before moving forward. The Duration is entered in hours and Minutes, and needs to first be converted to seconds before being subtracted. The "remaining time" value is then used to determine whether to go to the "Send Reminder" case or stay in the present one. Theres also a failsafe to ensure that, if the moisture level falls below the threshold (i.e if the user waters the plant in this state), it will return to the "Read Value" case.
 
 * Button Fallback
 
@@ -90,12 +87,10 @@ This state uses the "Elapsed time" expressVI, and subtracts from it the user def
         {% include figure.liquid path="assets/img/ArduinoSoil/State4.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
-
 This existed purely to deal with the scenario where the user does not select "Send additional email reminders." It will stay in this case until either the moisture level falls below the threshold or the user presses the button while in this case.
 
 Besides the 4 main cases of the state machine, the outer shell mainly consists of routing the relevant signals to the labview i/o 
-and making sure the signals were reserved through successive loops
-
+and making sure the signals were reserved through successive loops.
 
 Finally, here is a picture of the code successfully sending an email to a user:
 
