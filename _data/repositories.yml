@@ -1,5 +1,7 @@
 github_users:
   
 github_repos:
+  - EOC-dev/FuzzyLogicSpeedController_V1
   - EOC-dev/LabviewArduinoSoilMonitor
   - EOC-dev/ColorExtractorToList
+
