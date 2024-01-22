@@ -5,7 +5,7 @@ date: 2024-01-21 16:40:16
 description: It's Fuzzy
 tags: Fuzzy-Logic, RaspberryPi, Python
 categories: portfolio
-thumbnail: assets/video/Fuzzy-Logic speed controller/FuzzyLogic_FinalProject_Test2-(720p30).mp4
+thumbnail: assets/video/Fuzzy-Logic speed controller/FuzzyGif.gif
 github_repo: EOC-dev/FuzzyLogicSpeedController_V1
 ---
 
