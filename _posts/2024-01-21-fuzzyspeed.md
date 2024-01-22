@@ -6,7 +6,7 @@ description: It's Fuzzy
 tags: Fuzzy-Logic, RaspberryPi, Python
 categories: portfolio
 thumbnail: assets/video/Fuzzy-Logic speed controller/FuzzyLogic_FinalProject_Test2-(720p30).mp4
-github_repo: EOC-dev/LabviewArduinoSoilMonitor
+github_repo: EOC-dev/FuzzyLogicSpeedController_V1
 ---
 
 For my Fuzzy Logic undergrad class we were required to do a project. This was a fairly open ended design project which included both a MATLAB simulation section as well as a hardware implentation section, and was a collaborative effort between me and my classmate **Cooper Burns** (insert LinkedIn link here). I mainly dealt with the hardware section, which I will describe in this article. 
