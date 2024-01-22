@@ -75,7 +75,7 @@ This state uses the "Send Email" expressVi to send an email to the designated us
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/ArduinoSoil/State3.png" class="img-fluid rounded z-depth-1" style="max-width: [OriginalImageWidth]px;" zoomable=true %}
+        {% include figure.liquid path="assets/img/ArduinoSoil/State3.png" class="img-fluid rounded z-depth-1" style="max-width: 458px;" zoomable=true %}
     </div>
 </div>
 
