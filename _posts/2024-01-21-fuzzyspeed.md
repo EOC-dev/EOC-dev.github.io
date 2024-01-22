@@ -11,6 +11,19 @@ github_repo: EOC-dev/LabviewArduinoSoilMonitor
 
 For my Fuzzy Logic undergrad class we were required to do a project. This was a fairly open ended design project which included both a MATLAB simulation section as well as a hardware implentation section, and was a collaborative effort between me and my classmate **Cooper Burns** (insert LinkedIn link here). I mainly dealt with the hardware section, which I will describe in this article. 
 
+## Hardware Setup ##
+
+The hardware for this project was based on [this](https://osoyoo.com/2020/03/01/use-raspberry-pi-to-control-mecanum-omni-wheel-robot-car/) osoyoo kit, but fundementally to do this project one would need:
+
+| Needed        |      We Used      |  Cool |
+| ------------- | :-----------: | ----: |
+| Single Board Computer     | RaspberryPi 4 | $1600 |
+| Motor Controller      |   Osoyoo L298n based module    |   $12 |
+| Geared DC Motor |   osoyoo Motors     |    $1 |
+| Ultrasonic Sensor |   HC-SR04    |    $1 |
+| Robot Chassis |   Osoyoo chassis    |    $1 |
+
+
 Below is the state flow diagram for the program:
 
 <div class="row mt-3">
