@@ -5,7 +5,7 @@ date: 2024-01-21 17:40:15
 description: It's color
 tags: python, OpenCV
 categories: portfolio
-thumbnail: assets/video/ColorExtractorToList/ExampleDownsampled16Colors.png
+thumbnail: assets/img/ColorExtractorToList/ExampleDownsampled16Colors.png
 github_repo: EOC-dev/FuzzyLogicSpeedController_V1
 ---
 
@@ -118,7 +118,7 @@ else:
 
 ```
 
-I also wrote some documentation on the full workflow I did to downsample the image using GIMP, then using the above script to get the color list and color lookuptable.
+I also wrote some documentation on the full workflow I did to downsample the image using GIMP, then using the above script to get the color list and color lookuptable of that image.
 
 # Using Gimp to downsample an image
 
@@ -130,8 +130,7 @@ For this I will be using 'example.png' from the repositories /example folder.
     </div>
 </div>
 
-
-Firstly, install [Gimc]() according to your operating system, then go to Filters > G'MIC-Qt. Search for and select the “colormap” option. There are a few features this option has but the pertinent one is the "custom" setting. Shown below is the result of downsampling the example image using this method, and the colormap as shown in gimp:
+Firstly, install [Gimc]() according to your operating system, then go to Filters > G'MIC-Qt. Search for and select the “colormap” option. There are a few features this option has but the pertinent one is the "custom" setting. Shown below is the result of downsampling the example image to 16 colors using this method:
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
@@ -139,5 +138,12 @@ Firstly, install [Gimc]() according to your operating system, then go to Filters
     </div>
 </div>
 
+Now, put this image into a folder with the ColorExtractor script. After using the script as per the github [instructions](), there should be two files -- one for the list of colors in the image and the other defining the colormap of the image. 
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/ColorExtractorToList/ExampleDownsampled16Colors.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
 
 
