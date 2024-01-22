@@ -55,7 +55,7 @@
     {
       "name": "Control System Theory and Implementation",
       "level": "Proficient",
-      "keywords": ["PID Control", "Fuzzy Logic", "Data driven model discovery"]
+      "keywords": ["PID Control", "Fuzzy Logic"]
     },
     {
       "name": "3D Modeling/CAD",
@@ -100,7 +100,7 @@
   "interests": [
     {
       "name": "Robotics",
-      "keywords": ["PyDrake", "ROS", "Competitions"]
+      "keywords": ["PyDrake", "Data driven model discovery", "ROS", "Competitions"]
     },
     {
       "name": "IOT",
