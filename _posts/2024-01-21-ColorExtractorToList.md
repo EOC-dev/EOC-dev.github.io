@@ -124,8 +124,20 @@ I also wrote some documentation on the full workflow I did to downsample the ima
 
 For this I will be using 'example.png' from the repositories /example folder.
 
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/ColorExtractorToList/example.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
+
 
 Firstly, install [Gimc]() according to your operating system, then go to Filters > G'MIC-Qt. Search for and select the “colormap” option. There are a few features this option has but the pertinent one is the "custom" setting. Shown below is the result of downsampling the example image using this method, and the colormap as shown in gimp:
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/ColorExtractorToList/ExampleDownsampled16Colors.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
 
 
 
