@@ -5,7 +5,7 @@ date: 2024-01-20 19:40:15
 description: It's Labview
 tags: Arduino, Labview, IOT
 categories: portfolio
-thumbnail: assets/video/Fuzzy-Logic speed controller/FuzzyLogic_FinalProject_Test2-(720p30).mp4
+thumbnail: assets/IMG/ArduinoSOil/Dash1.png
 github_repo: EOC-dev/FuzzyLogicSpeedController_V1
 ---
 
