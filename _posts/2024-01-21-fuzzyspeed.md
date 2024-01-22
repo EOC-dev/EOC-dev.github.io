@@ -154,7 +154,7 @@ The code then defines the function for the Ultrasonic Sensor function:
 ```python
 code code code
 ```
-Sadly, I felt like a detailed explanation of the principles behind how fuzzy inferencing works was beyond the scope of this short portfolio article. Essentially 
+A detailed explanation of the principles behind how fuzzy inferencing works was beyond the scope of this short portfolio article,<d-footnote>If the reader is unfamiliar with how fuzzy logic inferencing works, [here](https://www.youtube.com/watch?v=__0nZuG4sTw) is a great series of videos by the great Brian Douglas on the topic.</d-footnote> but essentially 
 
 ---
 
