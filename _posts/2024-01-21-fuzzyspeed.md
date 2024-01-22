@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: distill
 title: Fuzzy-Logic speed controller using an ultrasonic sensor
 date: 2024-01-21 16:40:16
 description: It's Fuzzy
