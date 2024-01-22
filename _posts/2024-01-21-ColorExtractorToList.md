@@ -118,5 +118,12 @@ else:
 
 ```
 
-For 
+I also wrote some documentation on the full workflow I did to downsample the image using GIMP, then using the above script to get the color list and color lookuptable.
+
+# Using Gimp to downsample an image
+
+For this I will be using 'example.png' from the repositories /example folder.
+
+
+Firstly, install [Gimc]() according to your operating system, then go to Filters > G'MIC-Qt. Search for and select the “colormap” option. There are a few features this option has but the pertinent one is the "custom" setting. 
 
