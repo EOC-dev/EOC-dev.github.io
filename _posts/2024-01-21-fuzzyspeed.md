@@ -11,6 +11,10 @@ github_repo: EOC-dev/LabviewArduinoSoilMonitor
 
 For my Fuzzy Logic undergrad class we were required to do a project. This was a fairly open ended design project which included both a MATLAB simulation section as well as a hardware implentation section, and was a collaborative effort between me and my classmate **Cooper Burns** (insert LinkedIn link here). I mainly dealt with the hardware section, which I will describe in this article. 
 
+## The Plan ##
+
+The plan for this project was to design a fuzzy logic controller such that, while approaching an object (a wall, box, or any object detectable by an ultrasonic sensor), a robot’s speed would decrease based on the distance from that object, getting slower and slower as it gets closer until it stops a set distance away.
+
 ## Hardware Setup ##
 
 The hardware for this project was based on [this](https://osoyoo.com/2020/03/01/use-raspberry-pi-to-control-mecanum-omni-wheel-robot-car/) osoyoo robot kit, but generally to do this project one would need:
@@ -48,9 +52,6 @@ Finally, here is a video of the code working in action:
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
         {% include video.liquid path="assets/video/Fuzzy-Logic speed controller/FuzzyLogic_FinalProject_Test2-(720p30).mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include video.liquid path="assets/video/pexels-engin-akyurt-6069112-960x540-30fps.mp4" class="img-fluid rounded z-depth-1" controls=true %}
     </div>
 </div>
 <div class="caption">
