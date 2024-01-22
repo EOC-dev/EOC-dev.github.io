@@ -188,7 +188,7 @@ def get_speed_value(dist):
     
     return FuzzySpeed
 ```
-A detailed explanation of the principles behind how fuzzy inferencing works was beyond the scope of this short portfolio article,<d-footnote>If the reader is unfamiliar with how fuzzy logic inferencing works, here is a great series of videos by the great Brian Douglas on the topic: https://www.youtube.com/watch?v=__0nZuG4sTw</d-footnote> but essentially the function starts by establishing two fuzzy inference sets (FIS), one for distance and the other for speed. These sets interpret the sensor's output levels, translating them into more fuzzy terms like "close" or "far." Likewise for the concept of speed (expressed via pwm values) -- mapping these values to fuzzy concepts like "slow or "fast."
+A detailed explanation of the principles behind how fuzzy inferencing works was beyond the scope of this short portfolio article,<d-footnote> If the reader is unfamiliar with how fuzzy logic inferencing works, here is a great series of videos by the great Brian Douglas on the topic: </d-footnote> but essentially the function starts by establishing two fuzzy inference sets (FIS), one for distance and the other for speed. These sets interpret the sensor's output levels, translating them into more fuzzy terms like "close" or "far." Likewise for the concept of speed (expressed via pwm values) -- mapping these values to fuzzy concepts like "slow or "fast."
 
 
 <div class="row mt-3">
