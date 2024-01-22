@@ -47,7 +47,7 @@ Below is the state flow diagram for the main python program:
     </div>
 </div>
 
-First, the GPIO pins are setup using the {RPI.GPIO]() library
+First, the GPIO pins are setup using the [RPI.GPIO]() library
 
 ```python
 # GPIO pin assignments for motor control
@@ -143,10 +143,10 @@ $$
 \text{speed} = \frac{\text{distance}}{\text{time}}
 $$
 
-Whereas in our case we use the ultrasonic sensor to send out a sound pulse when the TRIGGER pin is high, then record the time when it recieves it and the ECHO pin is high. Thus our equation becomes:
+Whereas in our case we use the ultrasonic sensor to send out a sound pulse when the TRIGGER pin is set high, then record the time when it recieves it and the ECHO pin is high. The speed of sound is a constant, and thus our equation becomes:
 
 $$
-\text{distance} = \frac{\text{ElapsedTime} \times 34300}{2}
+\text{distance} = \frac{\text{(TimeSignalRecieved - TimeSignalSent)} \times 34300}{2}
 $$
 
 The code then defines the function for the Ultrasonic Sensor function:
@@ -154,14 +154,38 @@ The code then defines the function for the Ultrasonic Sensor function:
 ```python
 code code code
 ```
+Sadly, I felt like a detailed explanation of the principles behind how fuzzy inferencing works was beyond the scope of this short portfolio article. Essentially 
 
+---
+
+## Footnotes
+
+Just wrap the text you would like to show up in a footnote in a `<d-footnote>` tag.
+The number of the footnote will be automatically generated.<d-footnote>This will become a hoverable footnote.</d-footnote>
+
+---
 
 If the reader is unfamiliar with how fuzzy logic inferencing works, [here](https://www.youtube.com/watch?v=__0nZuG4sTw) is a great series of videos by the great Brian Douglas on the topic.
 
-The last part of the code defines the main control loop, which calls the MeasureDist function and pipes the distance recieved into our fuzzy logic control to obtain the corresponding PWM which will be used to drive our system.
+The last part of the code defines the main control loop, which calls the MeasureDist function and pipes the distance recieved into our fuzzy logic controller function to obtain the corresponding PWM which will be used to drive our system. This code runs in a loop until a user interrupts the program with a keyboard interrupt.
 
 ```python
-code code code
+# Continuous loop for processing and control
+try:
+    while True:
+        UltraDist = DistMeasure()  # Measure distance
+        print("Object distance = " + str(UltraDist) + " cm")
+        FuzzSpeedOut = get_speed_value(UltraDist)  # Process distance through fuzzy logic
+        print("\n Fuzzy Speed is: " + str(FuzzSpeedOut))
+        go_ahead(10)  # initialize a speed for the motor
+        rightSpeed.ChangeDutyCycle(FuzzSpeedOut) #USe the speed obtained 
+        leftSpeed.ChangeDutyCycle(FuzzSpeedOut)
+        time.sleep(0.1)
+
+# Shutdown - cleanup on interrupt (CTRL+C)
+except KeyboardInterrupt:
+    print("User ended program")
+    GPIO.cleanup()
 ```
 
 Finally, here is a video of the code working in action:
@@ -174,6 +198,8 @@ Finally, here is a video of the code working in action:
 <div class="caption">
     Pretty cool, huh?
 </div>
+
+Something to note is that one need not have any of the hardware to test out the code. Included in the [github]() are two files, one for using the code with hardware and one for using 
 
 ## What could be improved? ##
 
