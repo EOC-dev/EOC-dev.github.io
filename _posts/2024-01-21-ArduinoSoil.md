@@ -51,7 +51,7 @@ Below is the Dashboard of the completed project -- split into two parts: The fir
 
 The code utilizes [state machines](https://www.ni.com/en/support/documentation/supplemental/16/simple-state-machine-template-documentation.html) to control the flow of the program depending on the detected soil moisture level as well as user input. The state machine has four cases:
 
-* Read Value (Default)
+## Read Value (Default)
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid path="assets/img/ArduinoSoil/State1.png" class="img-fluid rounded z-depth-1" zoomable=true %}
@@ -59,7 +59,7 @@ The code utilizes [state machines](https://www.ni.com/en/support/documentation/s
 </div>
 This is the state the program will start in, and will use the obtained sensor values to determine whether to loop within this case or progress to the "Send Reminder" case.
 
-* Send Reminder
+## Send Reminder
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid path="assets/img/ArduinoSoil/State2.png" class="img-fluid rounded z-depth-1" zoomable=true %}
@@ -75,7 +75,7 @@ This state uses the "Send Email" expressVi to send an email to the designated us
 </div>
 This state uses the "Elapsed time" expressVI, and subtracts from it the user defined Duration to determine the remaining time before moving forward. The Duration is entered in hours and Minutes, and needs to first be converted to seconds before being subtracted. The "remaining time" value is then used to determine whether to go to the "Send Reminder" case or stay in the present one. Theres also a failsafe to ensure that, if the moisture level falls below the threshold (i.e if the user waters the plant in this state), it will return to the "Read Value" case.
 
-* Button Fallback
+## Button Fallback
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid path="assets/img/ArduinoSoil/State4.png" class="img-fluid rounded z-depth-1" zoomable=true %}
