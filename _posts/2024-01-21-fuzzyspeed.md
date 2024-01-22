@@ -13,7 +13,7 @@ For my Fuzzy Logic undergrad class we were required to do a project. This was a 
 
 ## The Plan ##
 
-The plan for this project was to design a fuzzy logic controller such that, while approaching an object (a wall, box, or any object detectable by an ultrasonic sensor), a robot’s speed would decrease based on the distance from that object, getting slower and slower as it gets closer until it stops a set distance away.
+The plan for this project was to design a fuzzy logic controller such that, while approaching an object (a wall, box, or any object detectable by an ultrasonic sensor), a robot’s speed would decrease based on the distance to that object, getting slower and slower as it gets closer until it stops a set distance away.
 
 ## Hardware Setup ##
 
@@ -188,7 +188,19 @@ def get_speed_value(dist):
     
     return FuzzySpeed
 ```
-A detailed explanation of the principles behind how fuzzy inferencing works was beyond the scope of this short portfolio article,<d-footnote>If the reader is unfamiliar with how fuzzy logic inferencing works, [here](https://www.youtube.com/watch?v=__0nZuG4sTw) is a great series of videos by the great Brian Douglas on the topic.</d-footnote> but essentially 
+A detailed explanation of the principles behind how fuzzy inferencing works was beyond the scope of this short portfolio article,<d-footnote>If the reader is unfamiliar with how fuzzy logic inferencing works, [here](https://www.youtube.com/watch?v=__0nZuG4sTw) is a great series of videos by the great Brian Douglas on the topic.</d-footnote> but essentially the function starts by establishing two fuzzy inference sets (FIS), one for distance and the other for speed. These sets interpret the sensor's output levels, translating them into more fuzzy terms like "close" or "far." Likewise for the concept of speed (expressed via pwm values).
+
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/Fuzzy-Logic speed controller/DistFuzzySet" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/Fuzzy-Logic speed controller/SpeedFuzzySet" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
+
+Once the two inference sets are defined, the function uses triangular membership functions to map these qualitative descriptors to the sensor's numerical data. In this context, 'distance' and 'speed' are treated as fuzzy variables, each associated with sets like 'close', 'medium', and 'far' for distance, and 'slow', 'medium', and 'fast' for speed. These fuzzy sets are then used to formulate rules that govern the system's behavior. For instance, one rule states that IF the distance is 'close', THEN the speed should be 'slow'. This rule-based approach enables the system to map imprecise inputs to 
 
 The last part of the code defines the main control loop, which calls the MeasureDist function and pipes the distance recieved into our fuzzy logic controller function to obtain the corresponding PWM which will be used to drive our system. This code runs in a loop until a user interrupts the program with a keyboard interrupt.
 
