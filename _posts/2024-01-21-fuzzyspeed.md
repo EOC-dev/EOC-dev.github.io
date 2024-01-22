@@ -33,7 +33,7 @@ The robot was setup according to the instructions [here](https://osoyoo.com/2020
 
 ## Software Setup and code walk through ##
 
-After the hardware was setup, the software was created to implement the control scheme -- a setup guide for which is provided on the [github]() page for this project.
+After the hardware was setup, the software was created to implement the control scheme -- a setup guide for which is provided on the [github](https://github.com/EOC-dev/FuzzyLogicSpeedControllerV1) page for this project.
 
 Below is the state flow diagram for the main python program:
 
@@ -44,6 +44,18 @@ Below is the state flow diagram for the main python program:
 </div>
 
 Finally, here is a video of the code working in action:
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include video.liquid path="assets/video/Fuzzy-Logic speed controller/FuzzyLogic_FinalProject_Test2-(720p30).mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include video.liquid path="assets/video/pexels-engin-akyurt-6069112-960x540-30fps.mp4" class="img-fluid rounded z-depth-1" controls=true %}
+    </div>
+</div>
+<div class="caption">
+    A simple, elegant caption looks good between video rows, after each row, or doesn't have to be there at all.
+</div>
 
 Pretty cool!
 
