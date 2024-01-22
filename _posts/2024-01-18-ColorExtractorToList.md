@@ -1,7 +1,7 @@
 ---
 layout: distill
-title: OpenCV image color extractor and 
-date: 2024-01-19 17:40:15
+title: OpenCV image color extractor
+date: 2024-01-18 17:40:15
 description: It's color
 tags: python, OpenCV
 categories: portfolio
