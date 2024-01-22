@@ -40,7 +40,7 @@
     {
       "name": "Programming",
       "level": "Proficient",
-      "keywords": ["Python/Micropython/Circuitpython", "C/C++", "VHDL"]
+      "keywords": ["Python/Micropython/Circuitpython", "MATLAB/Simulink", "C/C++", "VHDL"]
     },
     {
       "name": "Circuit Analysis/Design",
