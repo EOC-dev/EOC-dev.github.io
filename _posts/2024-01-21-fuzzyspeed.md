@@ -23,7 +23,7 @@ The hardware for this project was based on [this](https://osoyoo.com/2020/03/01/
 | ----------------- | :--------------: |
 | Single Board Computer     | RaspberryPi 4 |
 | Motor Controller      |   Osoyoo L298n based module    |
-| Geared DC Motor |   osoyoo Motors     |
+| Geared DC Motors (x2) |   osoyoo Motors     |
 | Ultrasonic Sensor |   HC-SR04    |
 | Robot Chassis |   Osoyoo chassis    |
 
