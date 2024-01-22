@@ -2,7 +2,7 @@
 layout: distill
 title: Arduino soil monitor dashboard and email watering reminder in Labview
 date: 2024-01-19 19:40:15
-description: It's Labview
+description: Electronic Instrumentation project using Labview
 tags: Arduino, Labview, IOT
 categories: portfolio
 thumbnail: assets/img/ArduinoSoil/Dash1.png
@@ -34,7 +34,7 @@ The soil sensor was connected to the arduino, and the arduino to a laptop via a 
 ## Software Setup and code walkthrough ##
 
 After the hardware was setup, labview was setup to communicate with arduino and take in its sensor readings -- a setup guide for which is provided on the [github](https://github.com/EOC-dev/LabviewArduinoSoilMonitor) page for this project. This project made
-use fo the [Labview LINX addon](), which essentially turned the Arduino into a DAQ.
+use fo the [Labview LINX addon](https://www.ni.com/gate/gb/GB_EVALTLKTLINXLVH/US), which essentially turned the Arduino into a DAQ.
 
 Below is the Dashboard of the completed project -- split into two parts: The first contains all the main controls of the program, and the second shows the current state machine the program is in as well as sensor output data for troubleshooting purposes:
 
@@ -84,7 +84,13 @@ This state uses the "Elapsed time" expressVI, and subtracts from it the user def
 This existed purely to deal with the scenario where the user does not select "Send additional email reminders." It will stay in this case until either the moisture level falls below the threshold or the user presses the button while in this case.
 
 Besides the 4 main cases of the state machine, the outer shell mainly consists of routing the relevant signals to the labview i/o 
-and making sure the signals were reserved through successive loops.
+and making sure the signals were reserved through successive loops. The expanded block diagram is shown below:
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/ArduinoSoil/FullBlock.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
 
 <!-- Something to note is that one need not have any of the hardware to test out the code. Included in the [github]() are two files, one for using the code with hardware and one for using -->
 
