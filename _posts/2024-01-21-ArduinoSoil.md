@@ -49,7 +49,7 @@ Below is the Dashboard of the completed project -- split into two parts: The fir
     </div>
 </div>
 
-The code utilizes [state machines](https://www.ni.com/en/support/documentation/supplemental/16/simple-state-machine-template-documentation.html) to control the flow of the program depending on the detected soil moisture level as well as user input. There are four cases:
+The code utilizes [state machines](https://www.ni.com/en/support/documentation/supplemental/16/simple-state-machine-template-documentation.html) to control the flow of the program depending on the detected soil moisture level as well as user input. The state machine has four cases:
 
 * Read Value (Default)
 
