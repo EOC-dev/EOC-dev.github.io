@@ -5,7 +5,7 @@ date: 2024-01-19 19:40:15
 description: Electronic Instrumentation project using Labview
 tags: Arduino, Labview, IOT
 categories: portfolio
-thumbnail: assets/img/ArduinoSoil/Dash1.png
+thumbnail: assets/img/ArduinoSoil/Blinking.gif
 github_repo: EOC-dev/FuzzyLogicSpeedController_V1
 ---
 
