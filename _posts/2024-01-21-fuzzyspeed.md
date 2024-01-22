@@ -54,10 +54,8 @@ Finally, here is a video of the code working in action:
     </div>
 </div>
 <div class="caption">
-    A simple, elegant caption looks good between video rows, after each row, or doesn't have to be there at all.
+    Pretty cool, huh?
 </div>
-
-Pretty cool!
 
 ## What could be improved? ##
 
