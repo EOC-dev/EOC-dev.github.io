@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "Christopher Earle",
-    "label": "Electrical Engineering graduate",
+    "Title": "Electrical Engineering graduate",
     "image": "",
     "email": "",
     "phone": "",
@@ -23,7 +23,7 @@
       "studyType": "Associate of Applied Science (A.A.S)",
       "startDate": "2019-08-01",
       "endDate": "2021-05-15",
-      "score": "3.75",
+      "gpa": "3.75",
       "courses": []
     },
     {
@@ -32,7 +32,7 @@
       "studyType": "Bachelor of Science (B.Sc)",
       "startDate": "2021-08-01",
       "endDate": "2023-08-30",
-      "score": "3.8",
+      "gpa": "3.8",
       "courses": ["Robotics and Intelligent Systems Concentration"]
     }
   ],
@@ -73,8 +73,8 @@
       "organization": "IEEE Student Chapter and Robotics Team at UTC",
       "position": "Member",
       "url": "",
-      "startDate": "",
-      "endDate": "",
+      "startDate": "2022-09-01",
+      "endDate": "2023-05-01",
       "summary": "Contributed to robot design, focusing on odometry system and computer vision.",
       "highlights": []
     },
@@ -92,15 +92,9 @@
       "position": "Assistant Judge",
       "url": "",
       "startDate": "2020-03",
-      "endDate": "",
+      "endDate": "2020-03",
       "summary": "Judged notebook, robot design, and interviews according to VEX standards.",
       "highlights": []
-    }
-  ],
-  "languages": [
-    {
-      "language": "English",
-      "fluency": "Native speaker"
     }
   ],
   "interests": [
