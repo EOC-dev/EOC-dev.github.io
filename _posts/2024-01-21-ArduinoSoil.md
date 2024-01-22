@@ -9,8 +9,10 @@ thumbnail: assets/video/Fuzzy-Logic speed controller/FuzzyLogic_FinalProject_Tes
 github_repo: EOC-dev/FuzzyLogicSpeedController_V1
 ---
 
-For my Electronic Insturmentation undergrad class we were required to do a project. We were given free reign on what the project could be,
-as long as it was labview related. The answer may shock you.
+For my Electronic Instrumentation undergrad class we were required to do a project. We were given free reign on what the project could be,
+as long as it was labview related. I had long wanted to do some kind of sensor project using an Arduino, and I wondered: "Could 
+the arduino be interfaced with and controlled by Labview?"
+The answer may shock you.
 
 ## The Plan ##
 
