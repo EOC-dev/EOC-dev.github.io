@@ -1,7 +1,7 @@
 ---
 layout: distill
 title: Arduino soil monitor dashboard and email watering reminder in Labview
-date: 2024-01-21 19:40:15
+date: 2024-01-20 19:40:15
 description: It's Labview
 tags: Arduino, Labview, IOT
 categories: portfolio
@@ -9,25 +9,25 @@ thumbnail: assets/video/Fuzzy-Logic speed controller/FuzzyLogic_FinalProject_Tes
 github_repo: EOC-dev/FuzzyLogicSpeedController_V1
 ---
 
-For my Fuzzy Logic undergrad class we were required to do a project. This was a fairly open ended design project which included both a MATLAB simulation section as well as a hardware implentation section, and was a collaborative effort between me and my classmate **Cooper Burns** (insert LinkedIn link here). I mainly dealt with the hardware section, which I will describe in this article. 
+For my Electronic Insturmentation undergrad class we were required to do a project. We were given free reign on what the project could be,
+as long as it was labview related. The answer may shock you.
 
 ## The Plan ##
 
-The plan for this project was to design a fuzzy logic controller such that, while approaching an object (a wall, box, or any object detectable by an ultrasonic sensor), a robot’s speed would decrease based on the distance to that object, getting slower and slower as it gets closer until it stops a set distance away.
+The plan for this project was to use labview to create a dashboard that would show a visual indicator when the plant needed watering,
+as well as send some kind of notification to the user reminding them to water their plant.
 
 ## Hardware Setup ##
 
-The hardware for this project was based on [this](https://osoyoo.com/2020/03/01/use-raspberry-pi-to-control-mecanum-omni-wheel-robot-car/) osoyoo robot kit, but generally to do this project one would need:
+The hardware for this project was pretty simple
 
 | Hardware        |      We Used      |
 | ----------------- | :--------------: |
-| Single Board Computer     | RaspberryPi 4 |
-| Motor Controller      |   Osoyoo L298n based module    |
-| Geared DC Motors (x2) |   osoyoo Motors     |
-| Ultrasonic Sensor |   HC-SR04    |
-| Robot Chassis |   Osoyoo chassis    |
+| Microcontroller     | Arduino UNO R3 |
+| Soil moisture sensor      |   Capacitative based module    |
+| Plants |   Mint (1x)     |
 
-The robot was setup according to the instructions [here](https://osoyoo.com/2020/03/01/use-raspberry-pi-to-control-mecanum-omni-wheel-robot-car/), but fundamentally the hardware translates to the following control diagram:
+The soil sensor was connected to the arduino, and the arduino to a laptop via a USB cable.
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
