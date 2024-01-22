@@ -149,23 +149,46 @@ $$
 \text{distance} = \frac{\text{(TimeSignalRecieved - TimeSignalSent)} \times 34300}{2}
 $$
 
-The code then defines the function for the Ultrasonic Sensor function:
+The code then defines the function for the Fuzzy Logic controller function:
 
 ```python
-code code code
+# Fuzzy inferencing system that takes in the distance calculated from the ultrasonic sensor, and uses it to determine what speed to set motors to.
+def get_speed_value(dist):
+    # Define universe variables
+    distance = ctrl.Antecedent(np.arange(0, 40, 1), 'distance')
+    speed = ctrl.Consequent(np.arange(0, 100, 1), 'speed')
+
+    # Define fuzzy membership functions
+    distance['close'] = fuzz.trimf(distance.universe, [0, 0, 20])
+    distance['medium'] = fuzz.trimf(distance.universe, [10, 20, 30])
+    distance['far'] = fuzz.trimf(distance.universe, [20, 40, 40])
+
+    speed['slow'] = fuzz.trimf(speed.universe, [0, 0, 40])
+    speed['medium'] = fuzz.trimf(speed.universe, [30, 50, 70])
+    speed['fast'] = fuzz.trimf(speed.universe, [60, 100, 100])
+
+    # Define fuzzy rules
+    rule1 = ctrl.Rule(distance['close'], speed['slow'])
+    rule2 = ctrl.Rule(distance['medium'], speed['medium'])
+    rule3 = ctrl.Rule(distance['far'], speed['fast'])
+
+    # Create control system
+    speed_ctrl = ctrl.ControlSystem([rule1, rule2, rule3])
+
+    # Create a control system simulator
+    speedL = ctrl.ControlSystemSimulation(speed_ctrl)
+
+    # Set inputs
+    speedL.input['distance'] = dist
+
+    # Calculate results
+    speedL.compute()
+
+    FuzzySpeed = int(speedL.output['speed'])
+    
+    return FuzzySpeed
 ```
 A detailed explanation of the principles behind how fuzzy inferencing works was beyond the scope of this short portfolio article,<d-footnote>If the reader is unfamiliar with how fuzzy logic inferencing works, [here](https://www.youtube.com/watch?v=__0nZuG4sTw) is a great series of videos by the great Brian Douglas on the topic.</d-footnote> but essentially 
-
----
-
-## Footnotes
-
-Just wrap the text you would like to show up in a footnote in a `<d-footnote>` tag.
-The number of the footnote will be automatically generated.<d-footnote>This will become a hoverable footnote.</d-footnote>
-
----
-
-If the reader is unfamiliar with how fuzzy logic inferencing works, [here](https://www.youtube.com/watch?v=__0nZuG4sTw) is a great series of videos by the great Brian Douglas on the topic.
 
 The last part of the code defines the main control loop, which calls the MeasureDist function and pipes the distance recieved into our fuzzy logic controller function to obtain the corresponding PWM which will be used to drive our system. This code runs in a loop until a user interrupts the program with a keyboard interrupt.
 
