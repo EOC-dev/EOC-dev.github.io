@@ -126,7 +126,7 @@ For this I will be using 'example.png' from the repositories /example folder.
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/ColorExtractorToList/example.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid path="assets/img/ColorExtractorToList/Example.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 
@@ -138,12 +138,21 @@ Firstly, install [Gimc]() according to your operating system, then go to Filters
     </div>
 </div>
 
-Now, put this image into a folder with the ColorExtractor script. After using the script as per the github [instructions](), there should be two files -- one for the list of colors in the image and the other defining the colormap of the image. 
+Now, put this image into a folder with the ColorExtractor script. After using the script as per the github [instructions](), there should be two files -- one for the list of colors in the image and the other defining the colormap of the image. As a sanity check, you can cross check the colormap file with the colormap palette in gimp to make sure the colors match.
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/ColorExtractorToList/ExampleDownsampled16Colors.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid path="assets/img/ColorExtractorToList/ColoCheck0.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/ColorExtractorToList/ColorCheck1.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/ColorExtractorToList/ColorCheck2" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
+
+
+
 
 
