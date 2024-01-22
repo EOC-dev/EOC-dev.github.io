@@ -188,7 +188,7 @@ def get_speed_value(dist):
     
     return FuzzySpeed
 ```
-A detailed explanation of the principles behind how fuzzy inferencing works was beyond the scope of this short portfolio article,<d-footnote>If the reader is unfamiliar with how fuzzy logic inferencing works, [here](https://www.youtube.com/watch?v=__0nZuG4sTw) is a great series of videos by the great Brian Douglas on the topic.</d-footnote> but essentially the function starts by establishing two fuzzy inference sets (FIS), one for distance and the other for speed. These sets interpret the sensor's output levels, translating them into more fuzzy terms like "close" or "far." Likewise for the concept of speed (expressed via pwm values).
+A detailed explanation of the principles behind how fuzzy inferencing works was beyond the scope of this short portfolio article,<d-footnote>If the reader is unfamiliar with how fuzzy logic inferencing works, [here](https://www.youtube.com/watch?v=__0nZuG4sTw) is a great series of videos by the great Brian Douglas on the topic.</d-footnote> but essentially the function starts by establishing two fuzzy inference sets (FIS), one for distance and the other for speed. These sets interpret the sensor's output levels, translating them into more fuzzy terms like "close" or "far." Likewise for the concept of speed (expressed via pwm values) -- mapping these values to fuzzy concepts like "slow or "fast."
 
 
 <div class="row mt-3">
@@ -200,7 +200,7 @@ A detailed explanation of the principles behind how fuzzy inferencing works was 
     </div>
 </div>
 
-Once the two inference sets are defined, the function uses triangular membership functions to map these qualitative descriptors to the sensor's numerical data. In this context, 'distance' and 'speed' are treated as fuzzy variables, each associated with sets like 'close', 'medium', and 'far' for distance, and 'slow', 'medium', and 'fast' for speed. These fuzzy sets are then used to formulate rules that govern the system's behavior. For instance, one rule states that IF the distance is 'close', THEN the speed should be 'slow'. This rule-based approach enables the system to map imprecise inputs to 
+Once the two inference sets are defined, the function uses triangular membership functions to map these qualitative descriptors to the sensor's numerical data. In this context, 'distance' and 'speed' are treated as fuzzy variables, each associated with sets like 'close', 'medium', and 'far' for distance, and 'slow', 'medium', and 'fast' for speed. These fuzzy sets are then used to formulate rules that govern the system's behavior. For instance, one rule states that IF the distance is 'close', THEN the speed should be 'slow'. This rule-based approach enables the system to map the distance we recieve from the ultrasonic sensor to a PWM signal to control the motors.
 
 The last part of the code defines the main control loop, which calls the MeasureDist function and pipes the distance recieved into our fuzzy logic controller function to obtain the corresponding PWM which will be used to drive our system. This code runs in a loop until a user interrupts the program with a keyboard interrupt.
 
@@ -234,7 +234,7 @@ Finally, here is a video of the code working in action:
     Pretty cool, huh?
 </div>
 
-Something to note is that one need not have any of the hardware to test out the code. Included in the [github]() are two files, one for using the code with hardware and one for using 
+<!-- Something to note is that one need not have any of the hardware to test out the code. Included in the [github]() are two files, one for using the code with hardware and one for using -->
 
 ## What could be improved? ##
 
