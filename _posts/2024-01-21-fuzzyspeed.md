@@ -37,7 +37,7 @@ The robot was setup according to the instructions [here](https://osoyoo.com/2020
 
 ## Software Setup and code walk through ##
 
-After the hardware was setup, the software was created to implement the control scheme using python -- a setup guide for which is provided on the [github](https://github.com/EOC-dev/FuzzyLogicSpeedControllerV1) page for this project.
+After the hardware was setup, the software was created to implement the control scheme using python -- a setup guide for which is provided on the [github](https://github.com/EOC-dev/FuzzyLogicSpeedController_V1) page for this project.
 
 Below is the state flow diagram for the main python program:
 
