@@ -13,7 +13,7 @@ For my Fuzzy Logic undergrad class we were required to do a project. This was a 
 
 ## Hardware Setup ##
 
-The hardware for this project was based on [this](https://osoyoo.com/2020/03/01/use-raspberry-pi-to-control-mecanum-omni-wheel-robot-car/) osoyoo kit, but fundementally to do this project one would need:
+The hardware for this project was based on [this](https://osoyoo.com/2020/03/01/use-raspberry-pi-to-control-mecanum-omni-wheel-robot-car/) osoyoo kit, but generally to do this project one would need:
 
 | Needed        |      We Used      |  Cool |
 | ------------- | :-----------: | ----: |
@@ -23,8 +23,19 @@ The hardware for this project was based on [this](https://osoyoo.com/2020/03/01/
 | Ultrasonic Sensor |   HC-SR04    |    $1 |
 | Robot Chassis |   Osoyoo chassis    |    $1 |
 
+The robot was setup according to the instructions [here](https://osoyoo.com/2020/03/01/use-raspberry-pi-to-control-mecanum-omni-wheel-robot-car/), but fundamentally the hardware translates to the following control diagram:
 
-Below is the state flow diagram for the program:
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/Fuzzy-Logic speed controller/ControlFlowDiagram.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
+
+## Software Setup ##
+
+After the hardware was setup, the software was created to implement the control scheme -- a setup guide for which is provided on the [github]() page
+
+Below is the state flow diagram for the main python program:
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
@@ -32,13 +43,7 @@ Below is the state flow diagram for the program:
     </div>
 </div>
 
-This translates to the following hardware control diagram:
 
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/Fuzzy-Logic speed controller/ControlFlowDiagram.png" class="img-fluid rounded z-depth-1" zoomable=true %}
-    </div>
-</div>
 
 
 ## What could be improved? ##
