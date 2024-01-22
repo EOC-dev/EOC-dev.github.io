@@ -5,7 +5,7 @@ date: 2024-01-21 17:40:15
 description: It's color
 tags: python, OpenCV
 categories: portfolio
-thumbnail: assets/video/Fuzzy-Logic speed controller/FuzzyLogic_FinalProject_Test2-(720p30).mp4
+thumbnail: assets/video/ColorExtractorToList/ExampleDownsampled16Colors.png
 github_repo: EOC-dev/FuzzyLogicSpeedController_V1
 ---
 
