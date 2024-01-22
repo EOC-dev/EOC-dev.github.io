@@ -72,12 +72,13 @@ This is the state the program will start in, and will use the obtained sensor va
 This state uses the "Send Email" expressVi to send an email to the designated user telling them their plant needs to be watered. Depending on whether the user pressed the "Send additional reminders" button, it will either enter the "Reminder Timer" case, or the "Button fallback" case.
 
 * Reminder Timer
-* 
+
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/ArduinoSoil/State3.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid path="assets/img/ArduinoSoil/State3.png" class="img-fluid rounded z-depth-1" style="max-width: [OriginalImageWidth]px;" zoomable=true %}
     </div>
 </div>
+
 This state uses the "Elapsed time" expressVI, and subtracts from it the user defined Duration to determine the remaining time before moving forward. The Duration is entered in hours and Minutes, and needs to first be converted to seconds before being subtracted. The "remaining time" value is then used to determine whether to go to the "Send Reminder" case or stay in the present one. Theres also a failsafe to ensure that, if the moisture level falls below the threshold (i.e if the user waters the plant in this state), it will return to the "Read Value" case.
 
 * Button Fallback
