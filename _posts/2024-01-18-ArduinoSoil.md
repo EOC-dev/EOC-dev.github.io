@@ -1,7 +1,7 @@
 ---
 layout: distill
 title: Arduino soil monitor dashboard and email watering reminder in Labview
-date: 2024-01-20 19:40:15
+date: 2024-01-18 19:40:15
 description: It's Labview
 tags: Arduino, Labview, IOT
 categories: portfolio
