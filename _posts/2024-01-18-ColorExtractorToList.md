@@ -2,7 +2,7 @@
 layout: distill
 title: OpenCV image color extractor
 date: 2024-01-18 17:40:15
-description: It's color
+description: Color Decoded
 tags: python, OpenCV
 categories: portfolio
 thumbnail: assets/img/ColorExtractorToList/ExampleDownsampled16Colors.png
