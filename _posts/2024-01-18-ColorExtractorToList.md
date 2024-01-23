@@ -5,7 +5,7 @@ date: 2024-01-18 17:40:15
 description: Color Decoded
 tags: python, OpenCV
 categories: portfolio
-thumbnail: assets/img/ColorExtractorToList/ExampleDownsampled16Colors.png
+thumbnail: assets/img/ColorExtractorToList/colorscycling.gif
 github_repo: EOC-dev/FuzzyLogicSpeedController_V1
 ---
 
