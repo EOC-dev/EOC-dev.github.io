@@ -23,7 +23,7 @@ as well as send some kind of notification to the user reminding them to water th
 
 The hardware for this project was pretty simple
 
-| Hardware        |      We Used      |
+| Hardware        |      I Used      |
 | ----------------- | :--------------: |
 | Microcontroller     | Arduino UNO R3 |
 | Soil moisture sensor      |   Capacitative based module    |
