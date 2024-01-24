@@ -105,6 +105,9 @@ and making sure the signals were reserved through successive loops. The expanded
 ## What could be improved? ##
 
 1. Labview sadly has many limitations that make doing an IOT project with it very difficult. This was mainly a proof of concept, but if it seriously wanted to be taken further there would need to be some way to communicate wirelessly with the Arduino/sensor.
+2. Be careful when choosing the sensors for a project like this --resistive sensors [notoriously](https://www.youtube.com/watch?v=m0mcCtcViTY) arent very good. While the capacitative sensors used in this project are in theory better, they seem to in practice be [plagued](https://www.youtube.com/watch?v=IGP38bz-K48&t=163s) with manufactoring errors. There was no funding for this project (and was mainly a proof of concept anyway), so cost was the most important metric being considered for sensor selection, but if this project wanted to be expanded better sensors should be used.
+3. Finally, for a soil moisture instrumentation project in general, there is a great [article](https://wyoextension.org/publications/html/B1331/) by the University of Wyoming Extension regarding methods of soil monitoring that should be consulted when doing a project of this sort.
+
 
 
 {% assign repo_name = page.github_repo %}
