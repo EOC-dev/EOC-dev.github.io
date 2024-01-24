@@ -28,13 +28,21 @@ The hardware for this project was pretty simple
 | Microcontroller     | Arduino UNO R3 |
 | Soil moisture sensor      |   Capacitative based module    |
 | Plants |   Mint (1x)     |
+| Dry Soil |   Miracle Grow Potting Mix     |
 
-The soil sensor was connected to the arduino, and the arduino to a laptop via a USB cable.
+
+The soil sensor was connected to the arduino via the VCC, GND, and Analog (A0 in my case) pins. The arduino was to a laptop via a USB cable as shown below:
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/ArduinoSoil/PhysicalSetup.png" class="img-fluid rounded z-depth-1" style="max-width: 458px;" zoomable=true %}
+    </div>
+</div>
 
 ## Software Setup and code walkthrough ##
 
 After the hardware was setup, labview was setup to communicate with arduino and take in its sensor readings -- a setup guide for which is provided on the [github](https://github.com/EOC-dev/LabviewArduinoSoilMonitor) page for this project. This project made
-use fo the [Labview LINX addon](https://www.ni.com/gate/gb/GB_EVALTLKTLINXLVH/US), which essentially turned the Arduino into a DAQ.
+use of the [Labview LINX addon](https://www.ni.com/gate/gb/GB_EVALTLKTLINXLVH/US), which essentially turned the Arduino into a DAQ.
 
 Below is the Dashboard of the completed project -- split into two parts: The first contains all the main controls of the program, and the second shows the current state machine the program is in as well as sensor output data for troubleshooting purposes:
 
